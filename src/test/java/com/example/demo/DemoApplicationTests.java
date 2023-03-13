@@ -25,9 +25,6 @@ class DemoApplicationTests {
 	@Autowired
 	private OtherService otherService;
 
-	@Autowired
-	private ThirdService thirdService;
-
 	@Test
 	void contextLoads() {
 		kafkaTemplate.send("testTopic", new TestEvent("schwampf"));
