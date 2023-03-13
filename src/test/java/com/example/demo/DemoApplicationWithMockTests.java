@@ -13,9 +13,9 @@ import static org.mockito.Mockito.when;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @EmbeddedKafka(
         bootstrapServersProperty = "spring.kafka.bootstrap-servers",
-        brokerProperties = {"listeners=PLAINTEXT://localhost:9092", "port=9092"}
+        brokerProperties = {"listeners=PLAINTEXT://localhost:9093", "port=9093"}
 )
-public class DemoApplicationTestsWithMock {
+public class DemoApplicationWithMockTests {
 
     @Autowired
     private KafkaTemplate<Object, Object> kafkaTemplate;
